@@ -6,9 +6,9 @@
   --off-white: #f4f4f4;
 }
 
-*,
-*::before,
-*::after {
+main *,
+main *::before,
+main *::after {
   box-sizing: border-box;
 }
 
