@@ -32,17 +32,18 @@ h1 {
 
 h2 {
   font-family: Roboto;
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
   color: rgb(0, 0, 0);
   font-size: 2.5rem;
 }
 
-p {
+main p {
   font-size: 1rem;
   color: black;
   font-family: inherit;
   line-height: 1.625rem;
+  font-weight: 400;
 }
 
 a {
@@ -60,9 +61,11 @@ img {
   font-weight: bold;
   border-radius: 28px;
   background-color: var(--blue);
-  padding: 14px 54px;
+  padding: 12px 54px;
   display: inline-block;
   color: white;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .bold {
@@ -81,14 +84,14 @@ img {
 
 .highlighted__text span::after {
   content: "";
-  height: 50%;
+  height: 26px;
   position: absolute;
   left: 0;
-  margin-left: -1rem;
-  top: 50%;
-  width: calc(100% + 2rem);
+  top: 40%;
   z-index: -1;
   background-color: var(--blue-light);
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
 }
 
 .highlighted__text--blue-light span::after {
@@ -113,8 +116,8 @@ img {
 }
 
 .section__title {
+  font-size: 36px;
   transform: scale(0.85);
-  margin-top: 1rem;
   margin: 0.5rem;
 }
 
@@ -131,20 +134,20 @@ img {
 
 .hero__title {
   transform: scale(1);
-  margin-top: 1rem;
   margin: 0.5rem;
+  font-size: 36px;
   text-align: center;
+  margin-left: -24px;
 }
 
 .hero__subtitle {
   padding: 0 22px;
-  margin: 0;
-  font-size: 14px;
-  margin-bottom: 8px;
+  margin: 2rem 0 1rem;
+  font-size: 16px;
+  transform: scale(0.85);
 }
 .hero__btn {
   text-align: center;
-  margin-top: 1.5rem;
 }
 
 /*Benefits*/
@@ -160,19 +163,21 @@ img {
   text-align: center;
   width: 250px;
   margin: 0 auto;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 .benefits__card--title {
   margin: 10px 0;
-  font-size: 22px;
+  font-size: 26px;
   text-transform: uppercase;
+  transform: scale(0.85);
 }
 .benefits__card--subtitle {
   margin: 10px 0;
   line-height: 1.4;
-  font-size: 14px;
-  max-width: 170px;
+  font-size: 16px;
+  max-width: 172px;
   margin: 8px auto;
+  transform: scale(0.85);
 }
 
 /*Testmonial*/
@@ -185,38 +190,41 @@ img {
   content: "";
   position: absolute;
   top: -170px;
-
   right: 0px;
-  width: 132px;
-  height: 132px;
+  width: 131px;
+  height: 131px;
   background-image: url(./images/succulents.png);
   background-size: cover;
 }
+.testimonial__text::before {
+  right: 25px;
+}
 
 .testmonial__content::before {
+  content: "";
   display: block;
-  padding: 0 1.5rem;
   background-image: url(./images/quot-icon.png);
   background-repeat: no-repeat;
-  width: 85px;
-  height: 80px;
+  width: 100px;
+  height: 93px;
   background-size: contain;
-  margin-left: 1.5rem;
-  content: "";
+  margin-left: 36px;
 }
+
 .testimonial__text {
-  font-size: 14px;
-  margin-bottom: 0;
-  padding: 0 1.5rem;
+  font-size: 16px;
+  padding: 0px 14px;
+  margin: 0;
   position: relative;
+  transform: scale(0.85);
 }
 .testimonial__author {
   font-weight: 300;
-  font-size: 12px;
-  margin-top: 8px;
-  margin-bottom: 32px;
-  padding: 0 1.5rem;
-  font-style: italic;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 0 14px;
+  transform: scale(0.85);
 }
 .testimonial__btn {
   text-align: center;
@@ -225,6 +233,8 @@ img {
 .testmonial__img {
   padding-top: 2rem;
   text-align: center;
+  max-width: 287px;
+  margin: 0 auto;
 }
 
 /*All We Need*/
@@ -243,8 +253,9 @@ img {
 }
 .need__card .need__card--img {
   border-radius: 50%;
-  border-width: 10px;
+  border-width: 7px;
   border-style: solid;
+  width: 195px;
 }
 .need__cards .b1 {
   border-color: #f6cad9;
@@ -261,27 +272,27 @@ img {
 .need__card--text {
   font-size: 14px;
   line-height: 1.4;
+  margin: 38px 0 14px;
 }
 
 /*Waiting*/
+.waiting .container {
+  padding-bottom: 0;
+}
 .waiting__content {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .waiting__title {
-  margin-bottom: 2rem;
-  font-size: 30px;
-  padding: 0 2rem;
   margin-bottom: 1.5rem;
 }
 .waiting__text {
   font-size: 14px;
-  padding: 0 2rem;
   line-height: 1.4rem;
   padding: 0 2rem;
 }
 .waiting--btn {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 .waiting__img__wrapper {
   text-align: center;
@@ -290,23 +301,23 @@ img {
   display: block;
   margin: 0 auto;
   width: 319px;
+  width: 266px;
 }
 .waiting__img {
   position: relative;
-  margin-top: 3rem;
 }
 .waiting__img::after {
   content: "";
-  background-image: url("./images/pink-bg.png");
+  background-image: url("./images/pink2.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
   display: block;
   position: absolute;
-  right: -18px;
-  top: -3px;
-  width: 330px;
-  height: 355px;
+  right: 18px;
+  top: -56px;
+  width: 319px;
+  height: 342px;
   z-index: -1;
 }
 
@@ -326,18 +337,22 @@ img {
   }
   .hero__content {
     width: 60%;
-    padding-left: 9rem;
+    padding-left: 6rem;
   }
   .hero__title {
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-left: 0.5rem;
   }
   .hero__subtitle {
     text-align: left;
+    font-size: 16px;
     padding-left: 0;
-    max-width: 380px;
-    margin: 2.5rem 0px;
-    line-height: 1.4;
+    max-width: 420px;
+    margin: 3rem 0px;
+    line-height: 26px;
+    transform: scale(1);
   }
   .hero__btn {
     text-align: left;
@@ -346,18 +361,33 @@ img {
   .section__title {
     line-height: 1;
     transform: scale(1);
-    font-size: 2.4rem;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .highlighted__text span::after {
+    margin-left: -2rem;
+    width: calc(100% + 4rem);
+    height: 34px;
   }
 
   /*benefits*/
   .benefits .container {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
   }
   .benefits__cards {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .benefits__card--title {
+    transform: scale(1);
+  }
+
+  .benefits__card--subtitle {
+    transform: scale(1);
+    margin: 18px auto;
   }
 
   /*testmonial*/
@@ -382,30 +412,36 @@ img {
   }
   .testmonial__img {
     width: 40%;
-    max-width: 400px;
+    max-width: 432px;
     text-align: center;
-    margin-left: 58px;
   }
 
   .testmonial__content::before {
-    padding-left: 0;
+    margin-left: 0;
+    width: 123px;
+    height: 115px;
   }
+
   .testimonial__btn {
     text-align: left;
     padding-left: 1.5rem;
   }
   .testimonial__text {
-    max-width: 340px;
+    max-width: 360px;
     padding-left: 0;
+    transform: scale(1);
   }
   .testimonial__text::before {
-    top: -150px;
-    width: 110px;
-    height: 110px;
+    top: -190px;
+    right: -40px;
+    width: 131px;
+    height: 131px;
   }
 
   .testimonial__author {
     padding-left: 0;
+    margin-top: 1rem;
+    transform: scale(1);
   }
   .testimonial__btn {
     padding-left: 0;
@@ -427,10 +463,10 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: -40px;
-    right: -70px;
-    width: 220px;
-    height: 116px;
+    top: -25px;
+    right: -180px;
+    width: 271px;
+    height: 143px;
   }
   .need__card {
     margin: 0;
@@ -443,42 +479,49 @@ img {
     padding: 3rem 1.5rem;
   }
   .need__card .need__card--img {
-    width: 214px;
+    width: 202px;
   }
   .need__card--text {
     font-size: 16px;
+    line-height: 26px;
   }
   /*Waiting*/
   .waiting {
     padding-top: 2.5rem;
     overflow: hidden;
   }
+  .waiting__title {
+    margin-bottom: 2.5rem;
+  }
   .waiting .container {
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: space-between;
     padding-left: 4.5rem;
     padding-right: 4.5rem;
   }
   .waiting__text {
-    max-width: 380px;
-    font-size: 14px;
+    max-width: 390px;
+    font-size: 16px;
+    padding: 0;
   }
   .waiting--btn {
     text-align: left;
-    padding-left: 2rem;
   }
+
+  .waiting__img {
+    width: 484px;
+    height: 398px;
+  }
+
   .waiting__img--img {
-    width: 350px;
+    width: 372px;
   }
   .waiting__img::after {
-    width: 450px;
-    height: 419px;
-    right: -18px;
-    top: -3px;
     background-position: top center;
-    width: 350px;
-    height: 566px;
-    top: 2px;
+    background-image: url("./images/pink-bg.png");
+    top: -70px;
+    right: -18px;
+    width: 484px;
+    height: 484px;
   }
 }
