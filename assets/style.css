@@ -132,16 +132,8 @@ img {
   transform: scale(0.85);
   margin: 0.5rem 0;
   font-size: 43px;
-  text-align: center;
-}
-
-.test {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   display: inline-block;
-  margin: 0 auto;
-  text-align: left !important;
+  text-align: left;
 }
 
 .hero__subtitle {
