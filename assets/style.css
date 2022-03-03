@@ -141,6 +141,7 @@ img {
   transform: translateX(-50%);
   display: inline-block;
   margin: 0 auto;
+  text-align: left !important;
 }
 
 .hero__subtitle {
