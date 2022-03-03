@@ -135,6 +135,14 @@ img {
   text-align: center;
 }
 
+.test {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  margin: 0 auto;
+}
+
 .hero__subtitle {
   padding: 0 22px;
   margin: 1rem 0;
