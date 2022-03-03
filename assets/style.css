@@ -130,10 +130,9 @@ img {
 
 .hero__title {
   transform: scale(0.85);
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   font-size: 43px;
   text-align: center;
-  margin-left: -24px;
 }
 
 .hero__subtitle {
@@ -338,8 +337,8 @@ img {
     text-align: left;
     font-size: 48px;
     line-height: 1.2;
-    margin-left: 0.5rem;
     transform: scale(1);
+    text-align: left;
   }
   .hero__subtitle {
     text-align: left;
