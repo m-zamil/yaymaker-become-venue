@@ -298,9 +298,9 @@ img {
 }
 .waiting__img--img {
   display: block;
-  margin: 0 auto;
   width: 319px;
   width: 266px;
+  margin-right: auto;
 }
 .waiting__img {
   position: relative;
@@ -332,7 +332,7 @@ img {
   }
   .hero {
     background-image: url(./images/hero-bg.jpg);
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
   }
   .hero__content {
     width: 60%;
@@ -396,6 +396,7 @@ img {
   /*testmonial*/
   .testimonial {
     padding-top: 3rem;
+    padding-bottom: 3rem;
     background-image: url(./images/testemonial-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -404,9 +405,9 @@ img {
 
   .testimonial .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 3.5rem;
+    padding: 1rem;
   }
 
   .testmonial__content {
@@ -417,6 +418,7 @@ img {
     width: 40%;
     max-width: 432px;
     text-align: center;
+    margin: 0;
   }
 
   .testmonial__content::before {
@@ -437,7 +439,7 @@ img {
   }
   .testimonial__text::before {
     top: -190px;
-    right: -40px;
+    right: 0;
     width: 131px;
     height: 131px;
   }
@@ -472,16 +474,20 @@ img {
     width: 271px;
     height: 143px;
   }
-  .need__card {
-    margin: 0;
-    max-width: 250px;
-  }
   .need__cards {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.5rem 3rem;
   }
+  .need__card {
+    margin: 0;
+    max-width: 250px;
+    margin-right: 4%;
+  }
+  .need__card:last-child {
+    margin-right: 0;
+  }
+
   .need__card .need__card--img {
     width: 202px;
   }
@@ -495,6 +501,9 @@ img {
     padding-top: 2.5rem;
     overflow: hidden;
   }
+  .waiting__content {
+    width: 50%;
+  }
   .waiting__title {
     margin-bottom: 2.5rem;
   }
@@ -505,12 +514,16 @@ img {
     padding-right: 4.5rem;
   }
   .waiting__text {
-    max-width: 390px;
+    max-width: 360px;
     font-size: 16px;
     padding: 0;
   }
   .waiting--btn {
     text-align: left;
+  }
+
+  .waiting__img__wrapper {
+    width: 50%;
   }
 
   .waiting__img {
@@ -525,7 +538,7 @@ img {
     background-position: top center;
     background-image: url("./images/pink-bg.png");
     top: -70px;
-    right: -18px;
+    right: 38px;
     width: 484px;
     height: 484px;
   }
