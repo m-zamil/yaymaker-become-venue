@@ -279,7 +279,7 @@ img {
   padding-bottom: 0;
 }
 .waiting__content {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 .waiting__title {
   margin-bottom: 1.5rem;
@@ -503,6 +503,7 @@ img {
   }
   .waiting__content {
     width: 50%;
+    margin-bottom: 2.5rem;
   }
   .waiting__title {
     margin-bottom: 2.5rem;
@@ -533,7 +534,7 @@ img {
 
   .waiting__img--img {
     width: 372px;
-    margin-right: auto;
+    margin: 0 auto 0 0;
   }
   .waiting__img::after {
     background-position: top center;
